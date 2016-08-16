@@ -11,6 +11,6 @@ var stripClassCallCheck = require('babel-strip-class-call-check');
 
 babel.transform('class Foo{} class Bar extends Foo {}', {
   externalHelpers: true,
-  plugins: [ { transformer: stripClassCallCheck, position: 'after' }]
+  plugins: [ { transformer: stripClassCallCheck, position: 'after' } ]
 })
 ```
